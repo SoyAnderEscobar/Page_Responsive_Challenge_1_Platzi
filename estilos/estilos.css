@@ -1,8 +1,182 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 *{
 	margin: 0;
 	padding: 0;
 }
 
 body{
-	background: hsl(257, 40%, 49%);
+	
+	background: url(../images/bg-desktop.svg) no-repeat hsl(257, 40%, 49%);
+	background-size: 1100px;
+	background-position: 25px -10px;	
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;
+	line-height: 1.5em;
+	position: relative;
+	
+
+}
+
+.container{
+	width: 90%;
+	margin: 0 auto;
+	
+}
+
+/*HEADER */
+
+.encabezado{
+	margin: 3% 0 4% 0;
+}
+
+.encabezado img{
+	width: 18%;
+	cursor: pointer;
+
+}
+
+.encabezado img:hover{
+	filter: drop-shadow(1px 5px 5px #00252e);
+}
+
+/*SECTION*/
+
+.contenido{
+	display: flex;
+	width: 100%;
+
+}
+
+picture{
+	flex-basis: 130%;
+	
+	width: 95%;
+	margin-right: 4%;
+}
+
+picture img{
+
+	width: 100%;
+	margin: 0 auto;
+}
+
+.texto{
+	
+	display: flex;
+	flex-direction: column;	
+	padding: 5px 25px;
+	margin-bottom: 0;
+
+}
+
+.texto h1{
+	width: 100%;	
+	margin: 4% 0 3% 0;
+	font-family: 'Poppins', sans-serif;
+	font-size: 2.5em;
+	line-height: 1.3em;
+	font-weight: bold;
+	text-shadow: 1px 1px 2px #000;
+
+}
+
+.texto p{
+	
+	font-size: 1.15em;
+}
+
+
+.texto a{
+	background: #fff;
+	margin-top: 4%;
+	width: 20%;
+	padding: 15px 40px;
+	border-radius: 40px;
+	box-shadow: 2px 3px 10px #00252e;
+}
+
+.texto a:link, .texto a:visited{
+	text-decoration: none;
+	text-align: center;
+	color: hsl(228, 45%, 44%);
+}
+
+.texto a:hover{
+	background: #00252e;
+	color: #fff;
+	box-shadow: none;
+}
+
+/*FOOTER*/
+
+.pie_de_pagina{
+	
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	
+}
+
+.pie_de_pagina ul{
+	list-style: none;
+	margin-top: 10px;
+	margin-right: 20px;
+
+}
+
+.pie_de_pagina ul li {
+	
+	float: left;	
+	margin-right: 15px;
+		
+}
+
+.pie_de_pagina ul li:nth-child(1) a:link, .pie_de_pagina ul li:nth-child(1) a:visited{
+
+	padding: 7px 12px 0px 12px;
+
+}
+
+.pie_de_pagina ul li:nth-child(2) a:link, .pie_de_pagina ul li:nth-child(2) a:visited{
+
+	padding: 7px 6px 0px 8px;
+
+}
+
+.pie_de_pagina ul li a:link, .pie_de_pagina ul li a:visited{
+	color: #fff;
+	font-size: 0.7em;
+	display: block;
+	padding: 6px 8px 3px 8px;
+	border-radius: 100%;
+	border: #fff solid 1px;	
+}
+
+.pie_de_pagina ul li a:hover{
+	background: #fff;
+	color:#000;
+}
+
+@media screen and (max-width: 1024px ) and (min-width: 1000px) {
+
+		.texto h1{
+			font-size: 2em;
+		}
+
+		.texto p{
+	
+			font-size: 0.9em;
+		}
+
+		.texto a{
+			width: 20%;
+			padding: 5px 20px;
+			border-radius: 40px;
+			box-shadow: 2px 3px 10px #00252e;
+		}
+
 }
