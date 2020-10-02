@@ -47,8 +47,7 @@ Este reto pertenece a la lista de retos de [Frontend Mentor](https://www.fronten
 =======
 # Page_Responsive_Challenge_1_Platzi
 Web development Challenge N°1 Platzi 
->>>>>>> origin/main
-=======
+
 # Page_Responsive_Challenge_1_Platzi
 Web development Challenge N°1 Platzi 
->>>>>>> origin/main
+
