@@ -114,7 +114,7 @@ picture img{
 /*FOOTER*/
 
 .pie_de_pagina{
-	
+
 	width: 100%;
 	display: flex;
 	justify-content: flex-end;
@@ -122,15 +122,16 @@ picture img{
 }
 
 .pie_de_pagina ul{
+	
 	list-style: none;
 	margin-top: 10px;
 	margin-right: 20px;
-
+	display: flex;
 }
 
 .pie_de_pagina ul li {
 	
-	float: left;	
+		
 	margin-right: 15px;
 		
 }
@@ -151,7 +152,7 @@ picture img{
 	color: #fff;
 	font-size: 0.7em;
 	display: block;
-	padding: 6px 8px 3px 8px;
+	padding: 6px 8px 1px 8px;
 	border-radius: 100%;
 	border: #fff solid 1px;	
 }
@@ -228,16 +229,21 @@ picture img{
 	}
 
 	.pie_de_pagina{
-		padding: 20px;
+		padding: 15px 0 25px 15px;
 		align-content: space-between;
 		justify-content: center;
 	
 	}
+
+
+	.pie_de_pagina ul li:nth-child(3){
+		margin-right: 0;
+	}
 }
 
-@media screen and (min-height: 700px){
+@media screen and (min-height: 900px){
 	body{
-	background: url(../images/bg-desktop.svg) no-repeat  hsl(257, 40%, 49%);
+	background: url(../images/bg-desktop.svg) no-repeat center fixed hsl(257, 40%, 49%);
 	background-size: 80%;
 	background-size: cover;
 	}
